@@ -1656,8 +1656,8 @@ elif [ x"$pic_possible" = xyes ]; then
 fi
 # Don't generate SVR4-style position-independent code for MIPS64.
 if test x$target_cpu = xmips64el ; then
-   TARGET_CFLAGS="$TARGET_CFLAGS -mno-abicalls"
-   TARGET_CCASFLAGS="$TARGET_CCASFLAGS -mno-abicalls"
+   TARGET_CFLAGS="$TARGET_CFLAGS -mno-abicalls -mips64r2"
+   TARGET_CCASFLAGS="$TARGET_CCASFLAGS -mno-abicalls -mips64r2"
 fi]
 
 CFLAGS="$TARGET_CFLAGS"
